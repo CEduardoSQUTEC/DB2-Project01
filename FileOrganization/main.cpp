@@ -16,7 +16,13 @@ int main() {
             sequentialTest<Basket>(filename);
         }
     } else if (action == "hash") {
-        cout << "Missing method!!\n";
+        if (filename == "netflix.csv") {
+            hashTest<long, Netflix>(filename);
+        } else if (filename == "WorldPopulation.csv") {
+            hashTest<long, WorldPopulation>(filename);
+        } else if (filename == "basket_analysis.csv") {
+            hashTest<long, Basket>(filename);
+        }
     } else if (action == "Test") {
         if (filename == "netflix.csv") {
             testTimeNetflix(filename, 5, -100, 1500);

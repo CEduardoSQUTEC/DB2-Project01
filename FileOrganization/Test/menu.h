@@ -2,6 +2,7 @@
 #define TEST_MENU_H
 
 #include "../SequentialFile/SeqFile.cpp"
+#include "../ExtendibleHashing/ExpandibleHashing.h"
 
 void my_clear() {
     for (int i = 0; i < 30; ++i) {
@@ -131,9 +132,76 @@ void sequentialTest(string filename) {
 }
 
 
-template<typename R>
+template<typename K, typename R>
 void hashTest(string filename) {
+    depth globalIndexDepth{};
+    my_clear();
+    cout << "Global index depth: ";
+    cin >> globalIndexDepth;
 
+    ExpandibleHashing<K, R> hashing(filename, globalIndexDepth);
+
+    int n{};
+    do {
+        do {
+            my_clear();
+            cout << "   Choose action:   \n";
+            cout << "--------------------\n";
+            cout << "1. Insert record\n";
+            cout << "2. Remove record\n";
+            cout << "3. Search record\n";
+            cout << "4. Search records in range\n";
+            cin >> n;
+        } while (n < 1 || n > 4);
+
+        K key, start, end;
+        switch (n) {
+            case 1: {
+                my_clear();
+                R record;
+                record.input();
+                cout << endl;
+                hashing.insert(record);
+                break;
+            }
+            case 2: {
+                my_clear();
+                cout << "Insert key: ";
+                cin >> key;
+                hashing.remove(key);
+                break;
+            }
+            case 3: {
+                my_clear();
+                cout << "Insert key: ";
+                cin >> key;
+                cout << endl;
+                auto response = hashing.search(key);
+                if (response.first) {
+                    cout << "Fount it: ";
+                    response.second.print();
+                } else cout << "We couldn't fount it: ";
+                break;
+            }
+            case 4: {
+                my_clear();
+                cout << "Insert start key: ";
+                cin >> start;
+                cout << "Insert end key: ";
+                cin >> end;
+                cout << endl;
+                vector<R> v = hashing.rangeSearch(start, end);
+                for (auto i: v) i.print();
+                break;
+            }
+            default:
+                cerr << "ERROR";
+                break;
+        }
+
+        cout << "Enter 0 to exit or any other number to continue...\n";
+        cin >> n;
+    } while (n != 0);
 }
 
 void testTimeNetflix(string filename, int auxFactor, long start, long end) {

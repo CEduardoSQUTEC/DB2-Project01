@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
+../libs.h
+/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
+
+/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
+../libs.h
+/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
+Bucket.h
+/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
+
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Basket.h
 Record.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h
@@ -33,6 +43,8 @@ SeqFile.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.h
 ../SequentialFile/SeqFile.cpp
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp
+../ExtendibleHashing/ExpandibleHashing.h
+/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
 
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
 iostream

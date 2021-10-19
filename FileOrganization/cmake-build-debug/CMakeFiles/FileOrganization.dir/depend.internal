@@ -9,6 +9,8 @@ CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o
  /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
  /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
 CMakeFiles/FileOrganization.dir/main.cpp.o
+ /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
+ /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
  /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Basket.h
  /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Netflix.h
  /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h

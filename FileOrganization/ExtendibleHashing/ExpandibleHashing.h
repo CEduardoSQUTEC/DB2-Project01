@@ -23,8 +23,7 @@ class ExpandibleHashing {
     }
 
     position hash(K key) {
-        position k = toPosition(key);
-        return k & ((1LL << _globalDepth) - 1);
+        return hash(toPosition(key));
     }
 
     position hash(position k) {
@@ -103,7 +102,7 @@ class ExpandibleHashing {
                 Bucket newBucket(bucket._localDepth + 1, bucket._bits | (1LL << bucket._localDepth));
                 bucket._localDepth++;
                 std::vector<std::pair<position, R>> values = {std::pair<position, R>(key, Record)};
-                for (size i = 0; i < bucket._size; ++i)
+                for (int i = 0; i < bucket._size; ++i)
                     values.push_back(bucket._values[i]);
                 bucket._size = 0;
 
@@ -136,8 +135,8 @@ public:
                                                                           _propertyFile(name + "property.bin") {
         std::fstream indexFile(_indexFile, std::ios::binary | std::ios::trunc);
         if (!indexFile.is_open()) throw std::invalid_argument("Cannot open index file.");
-        size n = ((1LL) << globalDepth);
-        for (size i = 0; i < n; ++i) {
+        int n = ((1LL) << globalDepth);
+        for (int i = 0; i < n; ++i) {
             position content = i % 2 * sizeof(Bucket<R>);
             indexFile.write((char *) &content, sizeof(position));
         }
@@ -207,7 +206,7 @@ public:
                 Bucket newBucket(bucket._localDepth + 1, bucket._bits | (1LL << bucket._localDepth));
                 bucket._localDepth++;
                 std::vector<std::pair<position, R>> values = {std::pair<position, R>(toPosition(key), Record)};
-                for (size i = 0; i < bucket._size; ++i)
+                for (int i = 0; i < bucket._size; ++i)
                     values.push_back(bucket._values[i]);
                 bucket._size = 0;
 

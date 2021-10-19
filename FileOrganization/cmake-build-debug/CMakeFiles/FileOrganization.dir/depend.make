@@ -9,6 +9,8 @@ CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o: \
  ../SequentialFile/SeqFile.h \
  ../libs.h
 CMakeFiles/FileOrganization.dir/main.cpp.o: \
+ ../ExtendibleHashing/Bucket.h \
+ ../ExtendibleHashing/ExpandibleHashing.h \
  ../Record/Basket.h \
  ../Record/Netflix.h \
  ../Record/Record.h \
