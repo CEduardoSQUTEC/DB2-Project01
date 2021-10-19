@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug"/>
+				<Option working_dir="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug"/>
+				<Option working_dir="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug"/>
+				<Option working_dir="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FileOrganization">
-				<Option output="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/FileOrganization" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug"/>
+				<Option output="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/FileOrganization" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 FileOrganization"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 FileOrganization"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FileOrganization/fast">
-				<Option output="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/FileOrganization" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug"/>
+				<Option output="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/FileOrganization" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,53 +75,53 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 FileOrganization/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 FileOrganization/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Basket.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Basket.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Movie.cpp">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Movie.cpp">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Movie.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Movie.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Netflix.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Netflix.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/WorldPopulation.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/WorldPopulation.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Test/menu.cpp">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.cpp">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Test/menu.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/libs.h">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/main.cpp">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/main.cpp">
 			<Option target="FileOrganization"/>
 		</Unit>
-		<Unit filename="/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/CMakeLists.txt">
+		<Unit filename="/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
