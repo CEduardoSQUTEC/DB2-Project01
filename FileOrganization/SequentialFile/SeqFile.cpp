@@ -43,7 +43,6 @@ void SeqFile<T, R>::createBinary() {
         r.serialization(str);
         r.next = (++s);
         outfile.write((char *) &r, sizeof(R));
-        // r.print();
     }
 
     r.next = -1;
@@ -101,6 +100,8 @@ void SeqFile<T, R>::add(R record) {
         file.write((char *) &prev, sizeof(R));
         auxRecord++;
         cout << "Added record!\n";
+        prev.print();
+
         return;
     }
 
@@ -217,7 +218,7 @@ R SeqFile<T, R>::search(T key) {
 
     if (!flag) {
         // If pos < 0 : the searched record is not in dataset
-        if (pos > 0) {
+        if (pos < 0) {
             cout << "ERROR WITH KEY: " << key << endl;
             return R();
         } else {

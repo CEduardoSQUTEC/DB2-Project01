@@ -68,7 +68,7 @@ public:
         cout << "    Year : "; cin >> this->year;
         string t;
         cout << "MovieTitle: "; cin >> t;
-        this->title = &t;
+        this->title = new string(t);
     }
 
 };
