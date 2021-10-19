@@ -1,4 +1,6 @@
-#pragma once
+
+#ifndef SEQFILE_H
+#define SEQFILE_H
 
 #include "../libs.h"
 #include "../Record/Netflix.h"
@@ -30,3 +32,5 @@ public:
 
 template<typename T, typename Record>
 bool binarySearch(T key, SeqFile<T, Record>* seq, long &pos);
+
+#endif //SEQFILE_H

@@ -60,14 +60,14 @@ string chooseAction(){
     return "";
 }
 
-template<typename Record>
+template<typename R>
 void sequentialTest(string filename){
     int aux;
     clear();
     cout << "Set auxiliary record factor : ";
     cin >> aux;
 
-    SeqFile<long, Record> sf(filename, aux);
+    SeqFile<long, R> sf(filename, aux);
 
     int n;
     do {
@@ -86,7 +86,7 @@ void sequentialTest(string filename){
         switch (n) {
             case 1: {
                 clear();
-                Record record;
+                R record;
                 record.input();
                 cout << endl;
                 sf.add(record);
@@ -104,7 +104,7 @@ void sequentialTest(string filename){
                 cout << "Insert key: ";
                 cin >> key;
                 cout << endl;
-                Record record2 = sf.search(key);
+                R record2 = sf.search(key);
                 record2.print();
                 break;
             }
@@ -115,7 +115,7 @@ void sequentialTest(string filename){
                 cout << "Insert end key: ";
                 cin >> end;
                 cout << endl;
-                vector<Record> v = sf.rangeSearch(start, end);
+                vector<R> v = sf.rangeSearch(start, end);
                 for (auto i : v) {
                     i.print();
                 }

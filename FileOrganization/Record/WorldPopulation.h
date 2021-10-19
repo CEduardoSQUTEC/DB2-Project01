@@ -1,3 +1,6 @@
+#ifndef FILEORGANIZATION_WORLD_H
+#define FILEORGANIZATION_WORLD_H
+
 #include "Record.h"
 
 class WorldPopulation : public Record {
@@ -95,3 +98,5 @@ public:
         cout << "UrbanPerc: "; cin >> UrbanPerc;
     }
 };
+
+#endif

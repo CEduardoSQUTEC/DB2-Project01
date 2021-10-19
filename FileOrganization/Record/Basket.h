@@ -1,3 +1,6 @@
+#ifndef FILEORGANIZATION_BASKET_H
+#define FILEORGANIZATION_BASKET_H
+
 #include "Record.h"
 
 class Basket : public Record {
@@ -179,3 +182,5 @@ public:
         cout << "chocolate: "; cin >> chocolate;
     }
 };
+
+#endif

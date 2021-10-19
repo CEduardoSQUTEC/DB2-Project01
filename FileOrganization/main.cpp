@@ -1,4 +1,4 @@
-#include "Test/menu.cpp"
+#include "Test/menu.h"
 
 int main(){
     string filename = chooseFile();
