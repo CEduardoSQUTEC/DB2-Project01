@@ -12,19 +12,13 @@ CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o: ../SequentialFile/
 CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o: ../SequentialFile/SeqFile.h
 CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o: ../libs.h
 
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../Record/Basket.h
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../Record/Netflix.h
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../Record/Record.h
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../Record/WorldPopulation.h
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../SequentialFile/SeqFile.h
 CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../Test/menu.cpp
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../Test/menu.h
-CMakeFiles/FileOrganization.dir/Test/menu.cpp.o: ../libs.h
 
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../Record/Basket.h
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../Record/Netflix.h
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../Record/Record.h
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../Record/WorldPopulation.h
+CMakeFiles/FileOrganization.dir/main.cpp.o: ../SequentialFile/SeqFile.cpp
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../SequentialFile/SeqFile.h
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../Test/menu.h
 CMakeFiles/FileOrganization.dir/main.cpp.o: ../libs.h
