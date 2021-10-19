@@ -3,4 +3,7 @@
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/FileOrganization">
     <contentRoot DIR="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/FileOrganization/SequentialFile/WorldPopulation.csv" />
+  </component>
 </project>

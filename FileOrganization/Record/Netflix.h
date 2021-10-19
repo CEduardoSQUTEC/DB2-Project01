@@ -10,20 +10,21 @@ class Netflix : public Record {
 public:
     long key; // movie ID
     int year; // movie year
-    string title; // movie title
+    string* title; // movie title
 public:
     Netflix(){}
 
-    Netflix(long key, long year, string title){
+    Netflix(long key, long year, string* title){
         this->key = key;
         this->year = year;
-        this->title = title;
+        this->title = new string();
+        *(this->title) = *title;
     }
 
     Netflix(long key){
         this->key = key;
         this->year = 100;
-        this->title = "----------------";
+        this->title = new string();
     }
 
     void serialization(string object) override {
@@ -48,16 +49,16 @@ public:
                 it.clear();
             }
         }
-        this->title = it;
+        this->title = new string(it);
 
-        // cout <<"KEY: " << this->key << "    YEAR: " << this->year << "     TITTLE: " << this->title << endl;
+//         cout <<"KEY: " << this->key << "    YEAR: " << this->year << "     TITTLE: " << this->title << endl;
 
     }
 
     void print() override {
         cout << " Id: " << this->key << endl;
         cout << " Year : " << this->year << endl;
-        cout << "Title: " << this->title << endl;
+        cout << "Title: " << *(this->title) << endl;
         cout << "Next record (logic position): " << next << endl;
         cout << "== == == == == == == == == ==\n";
     }
@@ -65,7 +66,9 @@ public:
     void input() override {
         cout << " (KEY) Id: "; cin >> this->key;
         cout << "    Year : "; cin >> this->year;
-        cout << "MovieTitle: "; cin >> this->title;
+        string t;
+        cout << "MovieTitle: "; cin >> t;
+        this->title = &t;
     }
 
 };
