@@ -4,13 +4,13 @@
 
 #include "menu.h"
 
-void clear(){
+void clear() {
     for (int i = 0; i < 30; ++i) {
         cout << endl;
     }
 }
 
-string chooseFile(){
+string chooseFile() {
     int n;
     do {
         clear();
@@ -35,7 +35,7 @@ string chooseFile(){
     return "";
 }
 
-string chooseAction(){
+string chooseAction() {
     int n;
     do {
         clear();
@@ -61,7 +61,7 @@ string chooseAction(){
 }
 
 template<typename R>
-void sequentialTest(string filename){
+void sequentialTest(string filename) {
     int aux;
     clear();
     cout << "Set auxiliary record factor : ";
@@ -80,7 +80,7 @@ void sequentialTest(string filename){
             cout << "3. Search record\n";
             cout << "4. Search records in range\n";
             cin >> n;
-        } while(n < 1 || n > 4);
+        } while (n < 1 || n > 4);
 
         long key, start, end;
         switch (n) {
@@ -116,7 +116,7 @@ void sequentialTest(string filename){
                 cin >> end;
                 cout << endl;
                 vector<R> v = sf.rangeSearch(start, end);
-                for (auto i : v) {
+                for (auto i: v) {
                     i.print();
                 }
                 break;
@@ -132,14 +132,14 @@ void sequentialTest(string filename){
 }
 
 template<typename R>
-void hashTest(string filename){
+void hashTest(string filename) {
 
 }
 
-void testTimeNetflix(string filename, int auxFactor, long start, long end){
+void testTimeNetflix(string filename, int auxFactor, long start, long end) {
 
 }
 
-void testTimeWorld(string filename, int auxFactor, long start, long end){
+void testTimeWorld(string filename, int auxFactor, long start, long end) {
 
 }

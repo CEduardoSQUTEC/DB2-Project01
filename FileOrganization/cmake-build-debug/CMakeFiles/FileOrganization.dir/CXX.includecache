@@ -22,6 +22,7 @@ Record.h
 Record.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h
 
+<<<<<<< HEAD
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
 ../libs.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
@@ -29,6 +30,25 @@ Record.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.h
 ../SequentialFile/SeqFile.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
+=======
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp
+SeqFile.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
+
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
+../libs.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/libs.h
+../Record/Netflix.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Netflix.h
+../Record/WorldPopulation.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/WorldPopulation.h
+../Record/Basket.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Basket.h
+
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Test/menu.h
+../SequentialFile/SeqFile.cpp
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp
+>>>>>>> 24763d206de1fdc16ceda6c79e369806c5fe7d96
 
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
 iostream
@@ -46,6 +66,7 @@ vector
 cstring
 -
 
+<<<<<<< HEAD
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/main.cpp
 Test/menu.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.h
@@ -55,4 +76,9 @@ Record/Basket.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Basket.h
 Record/WorldPopulation.h
 /home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/WorldPopulation.h
+=======
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/main.cpp
+Test/menu.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Test/menu.h
+>>>>>>> 24763d206de1fdc16ceda6c79e369806c5fe7d96
 
