@@ -51,8 +51,6 @@ public:
         }
         this->title = new string(it);
 
-//         cout <<"KEY: " << this->key << "    YEAR: " << this->year << "     TITTLE: " << this->title << endl;
-
     }
 
     void print() override {

@@ -14,5 +14,4 @@ add_executable(FileOrganization main.cpp libs.h
         Record/Basket.h
         Record/WorldPopulation.h
         Test/menu.h
-        Test/menu.cpp
         )

@@ -177,30 +177,6 @@ SequentialFile/SeqFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileOrganization.dir/build.make CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.s
 .PHONY : SequentialFile/SeqFile.cpp.s
 
-Test/menu.o: Test/menu.cpp.o
-.PHONY : Test/menu.o
-
-# target to build an object file
-Test/menu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileOrganization.dir/build.make CMakeFiles/FileOrganization.dir/Test/menu.cpp.o
-.PHONY : Test/menu.cpp.o
-
-Test/menu.i: Test/menu.cpp.i
-.PHONY : Test/menu.i
-
-# target to preprocess a source file
-Test/menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileOrganization.dir/build.make CMakeFiles/FileOrganization.dir/Test/menu.cpp.i
-.PHONY : Test/menu.cpp.i
-
-Test/menu.s: Test/menu.cpp.s
-.PHONY : Test/menu.s
-
-# target to generate assembly for a file
-Test/menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileOrganization.dir/build.make CMakeFiles/FileOrganization.dir/Test/menu.cpp.s
-.PHONY : Test/menu.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -240,9 +216,6 @@ help:
 	@echo "... SequentialFile/SeqFile.o"
 	@echo "... SequentialFile/SeqFile.i"
 	@echo "... SequentialFile/SeqFile.s"
-	@echo "... Test/menu.o"
-	@echo "... Test/menu.i"
-	@echo "... Test/menu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

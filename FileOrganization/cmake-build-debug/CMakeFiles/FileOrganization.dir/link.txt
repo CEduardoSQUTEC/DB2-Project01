@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/FileOrganization.dir/main.cpp.o CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o CMakeFiles/FileOrganization.dir/Record/Movie.cpp.o -o FileOrganization 
