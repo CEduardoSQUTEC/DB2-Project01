@@ -1,9 +1,9 @@
 #pragma once
 
 #include "../libs.h"
-#include "record/Netflix.h"
-#include "record/WorldPopulation.h"
-#include "record/Basket.h"
+#include "../Record/Netflix.h"
+#include "../Record/WorldPopulation.h"
+#include "../Record/Basket.h"
 
 // SeqFile : template class in order to be able to work with different types of key
 template<typename T, typename Record>
