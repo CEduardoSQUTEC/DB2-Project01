@@ -8,7 +8,7 @@ template <typename Record>
 void sequentialTest(string filename);
 
 void clear();
-string choosefile();
-string choosetechnique();
+string chooseFile();
+string chooseAction();
 void testTimeNetflix(string filename, int auxFactor, long start, long end);
 void testTimeWorld(string filename, int auxFactor, long start, long end);

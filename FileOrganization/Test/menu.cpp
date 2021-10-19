@@ -52,7 +52,7 @@ string chooseAction(){
         case 2:
             return "hash";
         case 3:
-            return "test";
+            return "Test";
         default:
             cerr << "ERROR!!";
             break;

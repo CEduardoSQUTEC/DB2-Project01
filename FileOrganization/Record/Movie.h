@@ -9,6 +9,11 @@ struct Movie {
     int _id;
     int _year;
     char _title[250];
+
+    int getKey() const;
+    int getYear() const;
+    const char *getTitle() const;
 };
+
 
 #endif //FILEORGANIZATION_MOVIE_H

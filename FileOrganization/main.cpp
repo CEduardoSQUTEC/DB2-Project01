@@ -1,4 +1,4 @@
-#include "test/menu.cpp"
+#include "Test/menu.cpp"
 
 int main(){
     string filename = chooseFile();
@@ -14,7 +14,7 @@ int main(){
         }
     } else if(action == "hash"){
         cout << "Missing method!!\n";
-    } else if (action == "test") {
+    } else if (action == "Test") {
         if (filename == "netflix.csv") {
             testTimeNetflix(filename, 5, -100, 1500);
         } else if (filename == "WorldPopulation.csv") {
