@@ -1,12 +1,12 @@
-#ifndef MENU_H
-#define MENU_H
+#ifndef TEST_MENU_H
+#define TEST_MENU_H
 
 #include "../SequentialFile/SeqFile.h"
 
-template <typename Record>
+template <typename R>
 void hashTest(string filename);
 
-template <typename Record>
+template <typename R>
 void sequentialTest(string filename);
 
 void clear();
@@ -16,3 +16,4 @@ void testTimeNetflix(string filename, int auxFactor, long start, long end);
 void testTimeWorld(string filename, int auxFactor, long start, long end);
 
 #endif
+

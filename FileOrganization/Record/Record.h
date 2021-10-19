@@ -4,7 +4,6 @@
 
 #include "../libs.h"
 
-
 // Record
 class Record {
 public:

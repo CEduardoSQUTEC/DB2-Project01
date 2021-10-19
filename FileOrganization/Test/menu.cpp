@@ -131,7 +131,7 @@ void sequentialTest(string filename){
     } while (n != 0);
 }
 
-template<typename Record>
+template<typename R>
 void hashTest(string filename){
 
 }

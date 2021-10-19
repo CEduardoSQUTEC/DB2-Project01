@@ -3,13 +3,10 @@
 #define SEQFILE_H
 
 #include "../libs.h"
-#include "../Record/Netflix.h"
-#include "../Record/WorldPopulation.h"
-#include "../Record/Basket.h"
 
 // SeqFile : template class in order to be able to work with different types of key
 template<typename T, typename Record>
-class SeqFile{
+class SeqFile {
 private:
     string filename;
     string datfile;
@@ -27,10 +24,10 @@ public:
     void reconstruct(); // 
 
     template<typename T1, typename Rec1>
-    friend bool binarySearch(T1 key, SeqFile<T1, Rec1>* seq, long &pos);
+    friend bool binarySearch(T1 key, SeqFile<T1, Rec1> *seq, long &pos);
 };
 
 template<typename T, typename Record>
-bool binarySearch(T key, SeqFile<T, Record>* seq, long &pos);
+bool binarySearch(T key, SeqFile<T, Record> *seq, long &pos);
 
 #endif //SEQFILE_H
