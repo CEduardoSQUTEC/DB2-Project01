@@ -17,11 +17,11 @@ int main() {
         }
     } else if (action == "hash") {
         if (filename == "netflix.csv") {
-            hashTest<long, Netflix>(filename);
+            hashTest<long, Netflix>("netflix");
         } else if (filename == "WorldPopulation.csv") {
-            hashTest<long, WorldPopulation>(filename);
+            hashTest<long, WorldPopulation>("WorldPopulation");
         } else if (filename == "basket_analysis.csv") {
-            hashTest<long, Basket>(filename);
+            hashTest<long, Basket>("basket_analysis");
         }
     } else if (action == "Test") {
         if (filename == "netflix.csv") {

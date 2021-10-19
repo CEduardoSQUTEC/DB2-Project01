@@ -27,6 +27,10 @@ public:
         this->title = new string();
     }
 
+    long getKey() const {
+        return key;
+    }
+
     void serialization(string object) override {
         int i = 0;
         string it;

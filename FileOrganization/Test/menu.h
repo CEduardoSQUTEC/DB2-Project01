@@ -161,7 +161,7 @@ void hashTest(string filename) {
                 R record;
                 record.input();
                 cout << endl;
-                hashing.insert(record);
+                hashing.insert(record.getKey(), record);
                 break;
             }
             case 2: {
