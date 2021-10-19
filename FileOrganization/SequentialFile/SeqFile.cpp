@@ -167,6 +167,11 @@ void SeqFile<T, R>::remove(T key) {
                     cout << "REMOVED RECORD WITH KEY " << key << ".\n";
                     return;
                 }
+                prevPos = pos;
+                prev = record;
+                file.seekg(prev.next * sizeof(R));
+                file.read((char*) &record, sizeof(R));
+                pos = prev.next;
             }
             // If record was not in auxiliary part
             cout << "ERROR! COULD NOT FIND RECORD WITH KEY " << key << ".\n";
@@ -179,7 +184,7 @@ void SeqFile<T, R>::remove(T key) {
         file.read((char *) &prev, sizeof(R));
         // Read next record to the previously read
         file.seekg(prev.next * sizeof(R));
-        file.read((char *) &prev, sizeof(R));
+        file.read((char *) &record, sizeof(R));
         // If previous record is in auxiliary part, iterate through positions
         // of next while keeping the last read record
         while (record.key != key) {
