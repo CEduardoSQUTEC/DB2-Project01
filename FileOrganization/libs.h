@@ -1,12 +1,15 @@
 //
-// Created by ceduardosq on 10/15/21.
+// Created by jlr on 10/12/21.
 //
 
-#ifndef FILEORGANIZATION_CONST_H
-#define FILEORGANIZATION_CONST_H
+#ifndef P1_LIBS_H
+#define P1_LIBS_H
 
+#include <iostream>
 #include <string>
 #include <fstream>
+#include <math.h>
+#include <regex>
 #include <vector>
 #include <cstring>
 
@@ -18,4 +21,6 @@ using answer = bool;
 using filename = std::string;
 using position = long;
 
-#endif //FILEORGANIZATION_CONST_H
+using namespace std;
+
+#endif //P1_LIBS_H
