@@ -1,11 +1,4 @@
 #include "Test/menu.h"
-<<<<<<< HEAD
-//#include "Test/menu.cpp"
-=======
-#include "Record/Netflix.h"
-#include "Record/Basket.h"
-#include "Record/WorldPopulation.h"
->>>>>>> bef8879987f5d39a0913328a4222521348d54831
 
 int main() {
     string filename = chooseFile();

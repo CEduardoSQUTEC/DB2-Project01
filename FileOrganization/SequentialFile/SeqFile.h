@@ -4,13 +4,14 @@
 
 #include "../libs.h"
 
+#include "../Record/Netflix.h"
+#include "../Record/Basket.h"
+#include "../Record/WorldPopulation.h"
+
+
 // SeqFile : template class in order to be able to work with different types of key
 template<typename T, typename R>
-<<<<<<< HEAD
-class SeqFile{
-=======
 class SeqFile {
->>>>>>> bef8879987f5d39a0913328a4222521348d54831
 private:
     string filename;
     string datfile;
@@ -32,10 +33,7 @@ public:
 };
 
 template<typename T, typename R>
-<<<<<<< HEAD
-bool binarySearch(T key, SeqFile<T, R>* seq, long &pos);
-=======
+
 bool binarySearch(T key, SeqFile<T, R> *seq, long &pos);
->>>>>>> bef8879987f5d39a0913328a4222521348d54831
 
 #endif //SEQFILE_H

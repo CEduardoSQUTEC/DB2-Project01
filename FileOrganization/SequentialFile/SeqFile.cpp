@@ -52,10 +52,10 @@ void SeqFile<T, R>::createBinary() {
 
     outfile.close();
 
-    outfile.open(datfile, ios::in | ios::binary);
-    outfile.seekg(3 *sizeof(R));
-    outfile.read((char*) &r, sizeof(R));
-    r.print();
+//    outfile.open(datfile, ios::in | ios::binary);
+//    outfile.seekg(3 *sizeof(R));
+//    outfile.read((char*) &r, sizeof(R));
+//    r.print();
 
     infile.close();
 
@@ -208,10 +208,7 @@ R SeqFile<T, R>::search(T key) {
 
     // Find record position
     long pos;
-    /*if (flag)*/ cout << "BINARYY\n";
     bool flag = binarySearch(key, this, pos);
-    puts("sal pls/n");
-    /*if (flag)*/ cout << "TRUEEE\n";
 
     if (!flag) {
         // If pos < 0 : the searched record is not in dataset
@@ -237,7 +234,6 @@ R SeqFile<T, R>::search(T key) {
         return R();
     } else {
         // If key is found, return record at position
-        cout << "ELSEE\n";
         infile.seekg(pos * sizeof(R));
         infile.read((char *) &record, sizeof(R));
     }
@@ -351,7 +347,7 @@ bool binarySearch(T key, SeqFile<T, R> *seqFile, long &pos) {
     fstream infile;
     infile.open(seqFile->datfile, ios::in | ios::binary);
     R record;
-    record.print();
+//    record.print();
     long left = 0;
     long right = seqFile->validRecord - 1;
     long mid;

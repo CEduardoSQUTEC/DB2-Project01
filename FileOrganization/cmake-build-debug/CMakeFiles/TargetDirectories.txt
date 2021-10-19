@@ -1,0 +1,3 @@
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir
