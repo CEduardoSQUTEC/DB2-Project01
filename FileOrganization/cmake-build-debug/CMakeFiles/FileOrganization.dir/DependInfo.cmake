@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Movie.cpp" "/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir/Record/Movie.cpp.o"
-  "/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp" "/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.o"
-  "/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/main.cpp" "/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir/main.cpp.o"
+  "C:/Users/JOSE/Documents/GitHub/BD2/2021-2/DB2-Project01-NOMEDASPALTA/FileOrganization/Record/Movie.cpp" "C:/Users/JOSE/Documents/GitHub/BD2/2021-2/DB2-Project01-NOMEDASPALTA/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir/Record/Movie.cpp.obj"
+  "C:/Users/JOSE/Documents/GitHub/BD2/2021-2/DB2-Project01-NOMEDASPALTA/FileOrganization/SequentialFile/SeqFile.cpp" "C:/Users/JOSE/Documents/GitHub/BD2/2021-2/DB2-Project01-NOMEDASPALTA/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir/SequentialFile/SeqFile.cpp.obj"
+  "C:/Users/JOSE/Documents/GitHub/BD2/2021-2/DB2-Project01-NOMEDASPALTA/FileOrganization/main.cpp" "C:/Users/JOSE/Documents/GitHub/BD2/2021-2/DB2-Project01-NOMEDASPALTA/FileOrganization/cmake-build-debug/CMakeFiles/FileOrganization.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
