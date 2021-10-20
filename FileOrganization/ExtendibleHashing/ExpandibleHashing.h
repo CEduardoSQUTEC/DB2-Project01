@@ -16,30 +16,12 @@ class ExpandibleHashing {
     depth _globalDepth{};
 
     position toPosition(K key) {
-        char *bytes = &key;
-        position k{};
-        std::memcpy(&k, bytes, sizeof(position));
+        position k = position(k);
         return k;
-    }
-
-    position hash(K key) {
-        position k = toPosition(key);
-        return k & ((1LL << _globalDepth) - 1);
     }
 
     position hash(position k) {
         return k & ((1LL << _globalDepth) - 1);
-    }
-
-    position searchIndex(K key) {
-        position dataPos = hash(key) * sizeof(position);
-        std::fstream indexFile(_indexFile, std::ios::binary);
-        if (!indexFile.is_open()) throw std::invalid_argument("Cannot open index file.");
-        indexFile.seekg(dataPos);
-        position bucketPos{};
-        indexFile.read((char *) &bucketPos, sizeof(bucketPos));
-        indexFile.close();
-        return bucketPos;
     }
 
     position searchIndex(position key) {
@@ -60,7 +42,7 @@ class ExpandibleHashing {
             Bucket<R> bucket{};
             dataFile.seekg(bucketPos);
             dataFile.read((char *) &bucket, sizeof(bucket));
-            if (bucket._size < M || bucket.next == -1) break;
+            if (bucket._size < M || bucket._next == -1) break;
             bucketPos = bucket._next;
         }
         dataFile.close();
@@ -76,9 +58,10 @@ class ExpandibleHashing {
             indexFile.seekg(j * sizeof(position));
             indexFile.write((char *) &bucket, sizeof(bucket));
         }
+        indexFile.close();
     }
 
-    void insert(position key, R Record) {
+    void _insert(position key, R Record) {
         position bucketPos = searchBucket(searchIndex(key));
         std::fstream dataFile(_dataFile, std::ios::binary);
         if (!dataFile.is_open()) throw std::invalid_argument("Cannot open data file.");
@@ -86,24 +69,23 @@ class ExpandibleHashing {
         Bucket<R> bucket{};
         dataFile.read((char *) &bucket, sizeof(bucket));
         if (bucket._size < M) {
-            bucket._values[bucket.size++] = Record;
-
+            bucket._values[bucket._size++] = std::pair<position, R>(toPosition(key), Record);
             dataFile.seekg(bucketPos);
             dataFile.write((char *) &bucket, sizeof(bucket));
         } else if (bucket._size == M) {
             if (bucket._localDepth == M) {
                 dataFile.seekg(0, std::ios::end);
                 position newBucketPos = dataFile.tellg();
-                Bucket newBucket(bucket._localDepth, bucket._bits);
+                Bucket<R> newBucket(bucket._localDepth, bucket._bits);
                 dataFile.write((char *) &newBucket, sizeof(newBucket));
                 bucket._next = newBucketPos;
                 dataFile.seekg(bucketPos);
                 dataFile.write((char *) &bucket, sizeof(bucket));
             } else {
-                Bucket newBucket(bucket._localDepth + 1, bucket._bits | (1LL << bucket._localDepth));
+                Bucket<R> newBucket(bucket._localDepth + 1, bucket._bits | (1LL << bucket._localDepth));
                 bucket._localDepth++;
                 std::vector<std::pair<position, R>> values = {std::pair<position, R>(key, Record)};
-                for (size i = 0; i < bucket._size; ++i)
+                for (int i = 0; i < bucket._size; ++i)
                     values.push_back(bucket._values[i]);
                 bucket._size = 0;
 
@@ -131,26 +113,26 @@ public:
     }
 
     explicit ExpandibleHashing(const filename &name, depth globalDepth) : _globalDepth(globalDepth),
-                                                                          _indexFile(name + "index.bin"),
-                                                                          _dataFile(name + "data.bin"),
-                                                                          _propertyFile(name + "property.bin") {
-        std::fstream indexFile(_indexFile, std::ios::binary | std::ios::trunc);
+                                                                          _indexFile(name + "-index.bin"),
+                                                                          _dataFile(name + "-data.bin"),
+                                                                          _propertyFile(name + "-property.bin") {
+        std::ofstream indexFile(_indexFile, std::ios::binary | std::ios::trunc);
         if (!indexFile.is_open()) throw std::invalid_argument("Cannot open index file.");
-        size n = ((1LL) << globalDepth);
-        for (size i = 0; i < n; ++i) {
+        int n = (1 << globalDepth);
+        for (int i = 0; i < n; ++i) {
             position content = i % 2 * sizeof(Bucket<R>);
             indexFile.write((char *) &content, sizeof(position));
         }
         indexFile.close();
 
-        std::fstream dataFile(_dataFile, std::ios::binary | std::ios::trunc);
+        std::ofstream dataFile(_dataFile, std::ios::binary | std::ios::trunc);
         if (!dataFile.is_open()) throw std::invalid_argument("Cannot open data file.");
         Bucket<R> bucket0(1, 0), bucket1(1, 1);
         dataFile.write((char *) &bucket0, sizeof(bucket0));
         dataFile.write((char *) &bucket1, sizeof(bucket0));
         dataFile.close();
 
-        std::fstream propertyFile(_propertyFile, std::ios::binary | std::ios::trunc);
+        std::ofstream propertyFile(_propertyFile, std::ios::binary | std::ios::trunc);
         if (!propertyFile.is_open()) throw std::invalid_argument("Cannot open property file.");
         propertyFile.write((char *) &_globalDepth, sizeof(globalDepth));
         propertyFile.close();
@@ -183,45 +165,7 @@ public:
     }
 
     void insert(K key, R Record) {
-        position bucketPos = searchBucket(searchIndex(key));
-        std::fstream dataFile(_dataFile, std::ios::binary);
-        if (!dataFile.is_open()) throw std::invalid_argument("Cannot open data file.");
-        dataFile.seekg(bucketPos);
-        Bucket<R> bucket{};
-        dataFile.read((char *) &bucket, sizeof(bucket));
-        if (bucket._size < M) {
-            bucket._values[bucket.size++] = Record;
-
-            dataFile.seekg(bucketPos);
-            dataFile.write((char *) &bucket, sizeof(bucket));
-        } else if (bucket._size == M) {
-            if (bucket._localDepth == M) {
-                dataFile.seekg(0, std::ios::end);
-                position newBucketPos = dataFile.tellg();
-                Bucket newBucket(bucket._localDepth, bucket._bits);
-                dataFile.write((char *) &newBucket, sizeof(newBucket));
-                bucket._next = newBucketPos;
-                dataFile.seekg(bucketPos);
-                dataFile.write((char *) &bucket, sizeof(bucket));
-            } else {
-                Bucket newBucket(bucket._localDepth + 1, bucket._bits | (1LL << bucket._localDepth));
-                bucket._localDepth++;
-                std::vector<std::pair<position, R>> values = {std::pair<position, R>(toPosition(key), Record)};
-                for (size i = 0; i < bucket._size; ++i)
-                    values.push_back(bucket._values[i]);
-                bucket._size = 0;
-
-                dataFile.seekg(bucketPos);
-                dataFile.write((char *) &bucket, sizeof(bucket));
-                dataFile.seekg(0, std::ios::end);
-                position newBucketPos = dataFile.tellg();
-                dataFile.write((char *) &newBucket, sizeof(bucket));
-                splitBucket(newBucketPos, newBucket._bits, newBucket._localDepth);
-                dataFile.close();
-                for (const auto &e: values) insert(e.first, e.second);
-            }
-        }
-        dataFile.close();
+        _insert(toPosition(key), Record);
     }
 
     void remove(K key) {

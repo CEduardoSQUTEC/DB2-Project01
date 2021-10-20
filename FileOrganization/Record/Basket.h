@@ -10,6 +10,9 @@ public:
     bool Bread;
     bool Butter;
     bool Cheese;
+
+    long getKey1() const;
+
     bool Corn;
     bool Dill;
     bool Eggs;
@@ -23,14 +26,14 @@ public:
     bool Yogurt;
     bool chocolate;
 public:
-    Basket(){}
-    
-    Basket(long key, bool Apple, bool Bread, 
-            bool Butter, bool Cheese, bool Corn, 
-            bool Dill, bool Eggs, bool Ice_cream, 
-            bool Kidney_Beans, bool Milk, bool Nutmeg, 
-            bool Onion, bool Sugar, bool Unicorn, 
-            bool Yogurt, bool chocolate) {
+    Basket() {}
+
+    Basket(long key, bool Apple, bool Bread,
+           bool Butter, bool Cheese, bool Corn,
+           bool Dill, bool Eggs, bool Ice_cream,
+           bool Kidney_Beans, bool Milk, bool Nutmeg,
+           bool Onion, bool Sugar, bool Unicorn,
+           bool Yogurt, bool chocolate) {
         this->key = key;
         this->Apple = Apple;
         this->Bread = Bread;
@@ -72,9 +75,9 @@ public:
     }
 
     void serialization(string object) override {
-        int i=0;
+        int i = 0;
         string att;
-        for (char letter : object) {
+        for (char letter: object) {
             if (letter != ',') {
                 att.push_back(letter);
             } else {
@@ -163,24 +166,46 @@ public:
     }
 
     void input() override {
-        cout << "ID (key): "; cin >> key;
-        cout << "Apple: "; cin >> Apple;
-        cout << "Bread: "; cin >> Bread;
-        cout << "Butter: "; cin >> Butter;
-        cout << "Cheese: "; cin >> Cheese;
-        cout << "Corn: "; cin >> Corn;
-        cout << "Dill: "; cin >> Dill;
-        cout << "Eggs: "; cin >> Eggs;
-        cout << "Ice_cream: "; cin >> Ice_cream;
-        cout << "Kidney_Beans: "; cin >> Kidney_Beans;
-        cout << "Milk: "; cin >> Milk;
-        cout << "Nutmeg: "; cin >> Nutmeg;
-        cout << "Onion: "; cin >> Onion;
-        cout << "Sugar: "; cin >> Sugar;
-        cout << "Unicorn: "; cin >> Unicorn;
-        cout << "Yogurt: "; cin >> Yogurt;
-        cout << "chocolate: "; cin >> chocolate;
+        cout << "ID (key): ";
+        cin >> key;
+        cout << "Apple: ";
+        cin >> Apple;
+        cout << "Bread: ";
+        cin >> Bread;
+        cout << "Butter: ";
+        cin >> Butter;
+        cout << "Cheese: ";
+        cin >> Cheese;
+        cout << "Corn: ";
+        cin >> Corn;
+        cout << "Dill: ";
+        cin >> Dill;
+        cout << "Eggs: ";
+        cin >> Eggs;
+        cout << "Ice_cream: ";
+        cin >> Ice_cream;
+        cout << "Kidney_Beans: ";
+        cin >> Kidney_Beans;
+        cout << "Milk: ";
+        cin >> Milk;
+        cout << "Nutmeg: ";
+        cin >> Nutmeg;
+        cout << "Onion: ";
+        cin >> Onion;
+        cout << "Sugar: ";
+        cin >> Sugar;
+        cout << "Unicorn: ";
+        cin >> Unicorn;
+        cout << "Yogurt: ";
+        cin >> Yogurt;
+        cout << "chocolate: ";
+        cin >> chocolate;
+    }
+
+    long getKey() const {
+        return key;
     }
 };
+
 
 #endif

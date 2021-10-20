@@ -18,7 +18,6 @@
 constexpr size_t M = 4;
 
 using depth = int;
-using size = int;
 using answer = bool;
 using filename = std::string;
 using position = long;

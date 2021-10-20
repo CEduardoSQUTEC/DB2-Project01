@@ -2,14 +2,18 @@
 #define TEST_MENU_H
 
 #include "../SequentialFile/SeqFile.cpp"
+<<<<<<< HEAD
+=======
+#include "../ExtendibleHashing/ExpandibleHashing.h"
+>>>>>>> ExpandibleHashing-Testing
 
-void my_clear(){
+void my_clear() {
     for (int i = 0; i < 30; ++i) {
         cout << endl;
     }
 }
 
-string chooseFile(){
+string chooseFile() {
     int n;
     do {
         my_clear();
@@ -34,7 +38,7 @@ string chooseFile(){
     return "";
 }
 
-string chooseAction(){
+string chooseAction() {
     int n;
     do {
         my_clear();
@@ -60,7 +64,7 @@ string chooseAction(){
 }
 
 template<typename R>
-void sequentialTest(string filename){
+void sequentialTest(string filename) {
     int aux;
     my_clear();
     cout << "Set auxiliary record factor : ";
@@ -79,7 +83,7 @@ void sequentialTest(string filename){
             cout << "3. Search record\n";
             cout << "4. Search records in range\n";
             cin >> n;
-        } while(n < 1 || n > 4);
+        } while (n < 1 || n > 4);
 
         long key, start, end;
         switch (n) {
@@ -115,7 +119,7 @@ void sequentialTest(string filename){
                 cin >> end;
                 cout << endl;
                 vector<R> v = sf.rangeSearch(start, end);
-                for (auto i : v) {
+                for (auto i: v) {
                     i.print();
                 }
                 break;
@@ -130,6 +134,7 @@ void sequentialTest(string filename){
     } while (n != 0);
 }
 
+<<<<<<< HEAD
 template<typename R>
 void hashTest(string filename){
 
@@ -230,8 +235,89 @@ void testTimeWorld(string filename, int auxFactor, long start, long end){
         if (i < 9) outFile << ",";
     }
     outFile.close();
+=======
+
+template<typename K, typename R>
+void hashTest(string filename) {
+    depth globalIndexDepth{};
+    my_clear();
+    cout << "Global index depth: ";
+    cin >> globalIndexDepth;
+
+    ExpandibleHashing<K, R> hashing(filename, globalIndexDepth);
+
+    int n{};
+    do {
+        do {
+            my_clear();
+            cout << "   Choose action:   \n";
+            cout << "--------------------\n";
+            cout << "1. Insert record\n";
+            cout << "2. Remove record\n";
+            cout << "3. Search record\n";
+            cout << "4. Search records in range\n";
+            cin >> n;
+        } while (n < 1 || n > 4);
+
+        K key, start, end;
+        switch (n) {
+            case 1: {
+                my_clear();
+                R record;
+                record.input();
+                cout << endl;
+                hashing.insert(record.getKey(), record);
+                break;
+            }
+            case 2: {
+                my_clear();
+                cout << "Insert key: ";
+                cin >> key;
+                hashing.remove(key);
+                break;
+            }
+            case 3: {
+                my_clear();
+                cout << "Insert key: ";
+                cin >> key;
+                cout << endl;
+                auto response = hashing.search(key);
+                if (response.first) {
+                    cout << "Fount it: ";
+                    response.second.print();
+                } else cout << "We couldn't fount it: ";
+                break;
+            }
+            case 4: {
+                my_clear();
+                cout << "Insert start key: ";
+                cin >> start;
+                cout << "Insert end key: ";
+                cin >> end;
+                cout << endl;
+                vector<R> v = hashing.rangeSearch(start, end);
+                for (auto i: v) i.print();
+                break;
+            }
+            default:
+                cerr << "ERROR";
+                break;
+        }
+>>>>>>> ExpandibleHashing-Testing
 
     cout << "Results can be viewed on results_world_seq.csv\n";
 }
 
+<<<<<<< HEAD
+=======
+void testTimeNetflix(string filename, int auxFactor, long start, long end) {
+
+}
+
+void testTimeWorld(string filename, int auxFactor, long start, long end) {
+
+}
+
+>>>>>>> ExpandibleHashing-Testing
 #endif
+

@@ -1,4 +1,10 @@
 #include "Test/menu.h"
+<<<<<<< HEAD
+=======
+#include "Record/Netflix.h"
+#include "Record/Basket.h"
+#include "Record/WorldPopulation.h"
+>>>>>>> ExpandibleHashing-Testing
 
 int main() {
     string filename = chooseFile();
@@ -13,7 +19,13 @@ int main() {
             sequentialTest<Basket>(filename);
         }
     } else if (action == "hash") {
-        cout << "Missing method!!\n";
+        if (filename == "netflix.csv") {
+            hashTest<long, Netflix>("netflix");
+        } else if (filename == "WorldPopulation.csv") {
+            hashTest<long, WorldPopulation>("WorldPopulation");
+        } else if (filename == "basket_analysis.csv") {
+            hashTest<long, Basket>("basket_analysis");
+        }
     } else if (action == "Test") {
         if (filename == "netflix.csv") {
             testTimeNetflix(filename, 5, -100, 1500);

@@ -33,7 +33,12 @@ public:
 };
 
 template<typename T, typename R>
+<<<<<<< HEAD
 
 bool binarySearch(T key, SeqFile<T, R> *seq, long &pos);
+=======
+bool binarySearch(T key, SeqFile<T, R> *seq, long &pos);
+
+>>>>>>> ExpandibleHashing-Testing
 
 #endif //SEQFILE_H

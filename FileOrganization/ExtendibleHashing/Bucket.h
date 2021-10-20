@@ -11,7 +11,7 @@ template<typename R>
 struct Bucket {
     depth _localDepth{};
     position _bits{};
-    size _size{};
+    int _size{};
     std::pair<position, R> _values[M]{};
     position _next{};
 public:

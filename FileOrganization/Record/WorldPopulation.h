@@ -13,9 +13,9 @@ public:
     long long Urban;
     int UrbanPerc;
 public:
-    WorldPopulation(){}
+    WorldPopulation() {}
 
-    WorldPopulation(long key, long long Population, float ChangePerc, 
+    WorldPopulation(long key, long long Population, float ChangePerc,
                     long long NetChange, int Density, long long Urban, int UrbanPerc) {
         this->key = key;
         this->Population = Population;
@@ -38,9 +38,9 @@ public:
     }
 
     void serialization(string object) override {
-        int i=0;
+        int i = 0;
         string att;
-        for (char letter : object) {
+        for (char letter: object) {
             if (letter != ',') {
                 att.push_back(letter);
             } else {
@@ -89,14 +89,26 @@ public:
     }
 
     void input() override {
-        cout << "Year (key): "; cin >> key;
-        cout << "Population: "; cin >> Population;
-        cout << "ChangePerc: "; cin >> ChangePerc;
-        cout << "NetChange: "; cin >> NetChange;
-        cout << "Density: "; cin >> Density;
-        cout << "Urban: "; cin >> Urban;
-        cout << "UrbanPerc: "; cin >> UrbanPerc;
+        cout << "Year (key): ";
+        cin >> key;
+        cout << "Population: ";
+        cin >> Population;
+        cout << "ChangePerc: ";
+        cin >> ChangePerc;
+        cout << "NetChange: ";
+        cin >> NetChange;
+        cout << "Density: ";
+        cin >> Density;
+        cout << "Urban: ";
+        cin >> Urban;
+        cout << "UrbanPerc: ";
+        cin >> UrbanPerc;
     }
+
+    long getKey() const {
+        return key;
+    }
+
 };
 
 #endif
