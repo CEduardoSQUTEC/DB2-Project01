@@ -7,7 +7,7 @@ Database 2 Project 1 from UTEC semester 2021-2
 - Julisa Lapa Romero (201910200)
 
 ## Documentación
-- Revisar Wiki del repositorio o la carpeta Docs. 
+- Revisar la carpeta Docs. 
 
 ## Ejecución
 Clonar el repositorio localmente:
