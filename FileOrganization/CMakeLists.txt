@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.17)
 project(FileOrganization)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -13,5 +13,4 @@ add_executable(FileOrganization main.cpp libs.h
         Record/Netflix.h
         Record/Basket.h
         Record/WorldPopulation.h
-        Test/menu.h
-        )
+        Test/menu.h)

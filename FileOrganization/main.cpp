@@ -1,11 +1,5 @@
-#include "Test/menu.h"
-<<<<<<< HEAD
-=======
-#include "Record/Netflix.h"
-#include "Record/Basket.h"
-#include "Record/WorldPopulation.h"
->>>>>>> ExpandibleHashing-Testing
 
+#include "Test/menu.h"
 int main() {
     string filename = chooseFile();
     string action = chooseAction();

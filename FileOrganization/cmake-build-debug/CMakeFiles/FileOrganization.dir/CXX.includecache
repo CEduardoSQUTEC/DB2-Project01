@@ -6,16 +6,19 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
+../libs.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/libs.h
+
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
+../libs.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/libs.h
+Bucket.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
+
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Basket.h
 Record.h
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Record.h
-
-/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Movie.cpp
-Movie.h
-/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Movie.h
-
-/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Movie.h
 
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Record/Netflix.h
 Record.h
@@ -46,51 +49,10 @@ SeqFile.h
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Test/menu.h
 ../SequentialFile/SeqFile.cpp
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp
+../ExtendibleHashing/ExpandibleHashing.h
+/home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
 
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/libs.h
-=======
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
-../libs.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
-../libs.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
-Bucket.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/Bucket.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Basket.h
-Record.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Netflix.h
-Record.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h
-../libs.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/WorldPopulation.h
-Record.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Record.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp
-SeqFile.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.h
-../libs.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.h
-../SequentialFile/SeqFile.cpp
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/SequentialFile/SeqFile.cpp
-../ExtendibleHashing/ExpandibleHashing.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/ExtendibleHashing/ExpandibleHashing.h
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/libs.h
->>>>>>> ExpandibleHashing-Testing
 iostream
 -
 string
@@ -105,7 +67,6 @@ vector
 -
 cstring
 -
-<<<<<<< HEAD
 chrono
 -
 random
@@ -114,16 +75,4 @@ random
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/main.cpp
 Test/menu.h
 /home/jlr/Desktop/CICLO6/BD2/DB2-Project01/FileOrganization/Test/menu.h
-=======
-
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/main.cpp
-Test/menu.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Test/menu.h
-Record/Netflix.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Netflix.h
-Record/Basket.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/Basket.h
-Record/WorldPopulation.h
-/home/ceduardosq/Documents/Classes/2021-2/db2/Project/Project01/DB2-Project01/FileOrganization/Record/WorldPopulation.h
->>>>>>> ExpandibleHashing-Testing
 
